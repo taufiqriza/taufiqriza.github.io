@@ -1729,6 +1729,30 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+.services .service-item .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.services .service-item .tech-tags .tag {
+  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 95%));
+  color: var(--accent-color);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  transition: all 0.3s ease;
+}
+
+.services .service-item .tech-tags .tag:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
 @media (max-width: 991px) {
   .services .card-item {
     padding: 1.75rem;
