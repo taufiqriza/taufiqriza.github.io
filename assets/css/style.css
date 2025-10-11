@@ -2176,18 +2176,18 @@ section {
   font-size: 13px;
 }
 
-/* ===== ULTRA MODERN Portfolio Cards ===== */
+/* ===== COMPACT & PROFESSIONAL Portfolio Cards ===== */
 .modern-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-2xl);
+  border-radius: var(--radius-xl);
   overflow: hidden;
   transition: all var(--transition-normal);
   height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .modern-card::before {
@@ -2196,15 +2196,15 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--color-primary-500), var(--color-primary-300));
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary-500), var(--color-primary-400));
   opacity: 0;
   transition: opacity var(--transition-normal);
 }
 
 .modern-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-2xl);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   border-color: var(--color-primary-200);
 }
 
@@ -2214,26 +2214,26 @@ section {
 
 .portfolio-header-icon {
   position: relative;
-  padding: var(--space-8) var(--space-6) var(--space-4);
-  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-neutral-50) 100%);
+  padding: var(--space-5) var(--space-4) var(--space-3);
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, rgba(248, 250, 252, 0.8) 100%);
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  min-height: 120px;
+  justify-content: flex-start;
+  gap: var(--space-3);
+  min-height: 80px;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .portfolio-header-icon i {
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-3xl);
   color: var(--color-primary-500);
-  margin-bottom: var(--space-3);
   transition: all var(--transition-normal);
-  filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.1));
+  filter: drop-shadow(0 2px 4px rgba(5, 99, 187, 0.15));
+  flex-shrink: 0;
 }
 
 .modern-card:hover .portfolio-header-icon i {
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: var(--color-primary-600);
 }
 
@@ -2241,36 +2241,42 @@ section {
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-1) var(--space-2);
   background: var(--color-primary-100);
   color: var(--color-primary-700);
-  border-radius: var(--radius-full);
-  font-size: var(--font-size-xs);
+  border-radius: var(--radius-md);
+  font-size: 10px;
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
   border: 1px solid var(--color-primary-200);
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
 }
 
 .stack-badge i {
-  font-size: var(--font-size-sm);
+  font-size: 9px;
 }
 
 .portfolio-content {
-  padding: var(--space-6);
+  padding: var(--space-4);
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .portfolio-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
-  margin: 0 0 var(--space-3) 0;
-  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-2) 0;
+  line-height: 1.3;
   transition: color var(--transition-normal);
+  letter-spacing: -0.025em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .modern-card:hover .portfolio-title {
@@ -2279,20 +2285,43 @@ section {
 
 .portfolio-short {
   color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-relaxed);
-  margin: 0 0 var(--space-4) 0;
+  font-size: var(--font-size-xs);
+  line-height: 1.5;
+  margin: 0 0 var(--space-3) 0;
   flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Modern Button Variants */
+.btn-modern-primary,
+.btn-modern-demo,
+.btn-modern-code {
+  padding: var(--space-2) var(--space-3);
+  font-size: 11px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+}
+
 .btn-modern-primary {
   background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-600));
   color: white;
-  border: none;
-  box-shadow: 0 4px 12px rgb(5 99 187 / 0.3);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(5, 99, 187, 0.25);
 }
 
 .btn-modern-primary::before {
@@ -2302,14 +2331,14 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
   transition: left var(--transition-slow);
 }
 
 .btn-modern-primary:hover {
   background: linear-gradient(135deg, var(--color-primary-600), var(--color-primary-700));
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgb(5 99 187 / 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(5, 99, 187, 0.35);
 }
 
 .btn-modern-primary:hover::before {
@@ -2319,56 +2348,58 @@ section {
 .btn-modern-demo {
   background: linear-gradient(135deg, var(--color-success), #059669);
   color: white;
-  border: none;
-  box-shadow: 0 4px 12px rgb(16 185 129 / 0.3);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
 }
 
 .btn-modern-demo:hover {
   background: linear-gradient(135deg, #059669, #047857);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgb(16 185 129 / 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
 }
 
 .btn-modern-code {
-  background: var(--color-neutral-900);
+  background: var(--color-neutral-800);
   color: white;
-  border: none;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .btn-modern-code:hover {
-  background: var(--color-neutral-800);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgb(0 0 0 / 0.4);
+  background: var(--color-neutral-700);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 /* Enhanced Project Actions */
 .portfolio-actions {
   display: flex;
   gap: var(--space-2);
-  margin-top: var(--space-5);
-  padding-top: var(--space-5);
+  margin-top: auto;
+  padding-top: var(--space-3);
   border-top: 1px solid var(--color-border);
 }
 
 /* Modern Tech Tags */
 .modern-card .tech-tags {
-  margin-top: var(--space-3);
-  margin-bottom: var(--space-4);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
 }
 
 .modern-card .tech-tag {
   background: var(--color-neutral-100);
   color: var(--color-neutral-700);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-md);
-  font-size: var(--font-size-xs);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: 9px;
   font-weight: var(--font-weight-semibold);
   font-family: var(--font-family-mono);
   border: 1px solid var(--color-neutral-200);
   transition: all var(--transition-fast);
   position: relative;
   overflow: hidden;
+  line-height: 1.2;
 }
 
 .modern-card .tech-tag::before {
@@ -2386,7 +2417,7 @@ section {
   background: var(--color-primary-50);
   color: var(--color-primary-700);
   border-color: var(--color-primary-200);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .modern-card .tech-tag:hover::before {
@@ -2399,17 +2430,17 @@ section {
   align-items: center;
   gap: var(--space-2);
   color: var(--color-success);
-  font-size: var(--font-size-sm);
+  font-size: 11px;
   font-weight: var(--font-weight-semibold);
-  margin: var(--space-3) 0 var(--space-4) 0;
-  padding: var(--space-2) var(--space-3);
-  background: rgba(16, 185, 129, 0.1);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  margin: var(--space-2) 0 var(--space-3) 0;
+  padding: var(--space-1) var(--space-2);
+  background: rgba(16, 185, 129, 0.08);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(16, 185, 129, 0.15);
 }
 
 .modern-card .project-kpi i {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
   color: var(--color-success);
 }
 
@@ -2418,25 +2449,26 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: var(--space-4) 0;
-  font-size: var(--font-size-xs);
+  margin: var(--space-3) 0;
+  font-size: 10px;
   color: var(--color-text-muted);
-  padding: var(--space-3);
+  padding: var(--space-2);
   background: var(--color-neutral-50);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
 }
 
 .modern-card .project-role,
 .modern-card .project-date {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--space-1);
   font-weight: var(--font-weight-medium);
 }
 
 .modern-card .project-role i,
 .modern-card .project-date i {
-  font-size: var(--font-size-sm);
+  font-size: 10px;
   color: var(--color-primary-500);
 }
 
@@ -2447,16 +2479,27 @@ section {
   }
 
   .portfolio-header-icon {
-    padding: var(--space-6) var(--space-4) var(--space-3);
-    min-height: 100px;
+    padding: var(--space-4) var(--space-3) var(--space-2);
+    min-height: 70px;
+    gap: var(--space-2);
   }
 
   .portfolio-header-icon i {
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-2xl);
   }
 
   .portfolio-content {
-    padding: var(--space-4);
+    padding: var(--space-3);
+  }
+
+  .portfolio-title {
+    font-size: var(--font-size-base);
+    line-height: 1.4;
+  }
+
+  .portfolio-short {
+    font-size: 10px;
+    -webkit-line-clamp: 2;
   }
 
   .portfolio-actions {
@@ -2467,6 +2510,77 @@ section {
   .portfolio-actions .btn {
     width: 100%;
     justify-content: center;
+    min-height: 36px;
+  }
+
+  .modern-card .tech-tags {
+    gap: 2px;
+  }
+
+  .modern-card .tech-tag {
+    font-size: 8px;
+    padding: 1px var(--space-1);
+  }
+
+  .modern-card .project-kpi {
+    font-size: 10px;
+    padding: 2px var(--space-1);
+  }
+
+  .modern-card .portfolio-meta {
+    font-size: 9px;
+    padding: var(--space-1);
+  }
+
+  .stack-badge {
+    font-size: 9px;
+    padding: 1px var(--space-1);
+  }
+}
+
+@media (max-width: 576px) {
+  .modern-card {
+    margin-bottom: var(--space-3);
+  }
+
+  .portfolio-header-icon {
+    padding: var(--space-3);
+    min-height: 60px;
+  }
+
+  .portfolio-header-icon i {
+    font-size: var(--font-size-xl);
+  }
+
+  .portfolio-content {
+    padding: var(--space-2);
+  }
+
+  .portfolio-title {
+    font-size: 14px;
+    margin-bottom: var(--space-1);
+  }
+
+  .portfolio-short {
+    font-size: 9px;
+    margin-bottom: var(--space-2);
+  }
+
+  .portfolio-actions {
+    gap: var(--space-1);
+    padding-top: var(--space-2);
+  }
+
+  .modern-card .tech-tag {
+    font-size: 7px;
+  }
+
+  .modern-card .project-kpi {
+    font-size: 9px;
+  }
+
+  .modern-card .portfolio-meta {
+    font-size: 8px;
   }
 }
 
