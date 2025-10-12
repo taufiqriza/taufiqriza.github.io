@@ -759,300 +759,471 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
+      <!-- Section Title with Stats -->
       <div class="container section-title">
-        <h2>Portfolio</h2>
-        <p>Koleksi project terbaik yang menampilkan keahlian dalam Laravel, Next.js, MERN, Go, Java, dan Kotlin development dengan solusi yang inovatif dan impact-driven</p>
+        <h2>Featured Projects</h2>
+        <p>Real-world solutions showcasing expertise in modern web technologies with measurable impact and business value</p>
+
+        <!-- Portfolio Statistics -->
+        <div class="portfolio-stats" data-aos="fade-up" data-aos-delay="200">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number">100K+</span>
+                <span class="stat-label">Active Users</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number">4.8</span>
+                <span class="stat-label">Avg Rating</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="stat-info">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Tech Stacks</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div><!-- End Section Title -->
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <!-- Tech Stack Navigation -->
+        <div class="tech-navigation" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-pills">
+            <button class="tech-pill active" data-filter="*">
+              <i class="fas fa-border-all"></i>
+              <span>All Projects</span>
+            </button>
+            <button class="tech-pill" data-filter=".filter-laravel">
+              <i class="fab fa-laravel"></i>
+              <span>Laravel</span>
+            </button>
+            <button class="tech-pill" data-filter=".filter-nextjs">
+              <i class="fab fa-react"></i>
+              <span>Next.js</span>
+            </button>
+            <button class="tech-pill" data-filter=".filter-mern">
+              <i class="fab fa-node-js"></i>
+              <span>MERN</span>
+            </button>
+            <button class="tech-pill" data-filter=".filter-go">
+              <i class="fab fa-golang"></i>
+              <span>Go</span>
+            </button>
+            <button class="tech-pill" data-filter=".filter-java">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </button>
+            <button class="tech-pill" data-filter=".filter-kotlin">
+              <i class="fab fa-android"></i>
+              <span>Kotlin</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">
-              <i class="bi bi-grid-3x3"></i> All Projects
-            </li>
-            <li data-filter=".filter-laravel">
-              Laravel
-            </li>
-            <li data-filter=".filter-nextjs">
-              Next.js
-            </li>
-            <li data-filter=".filter-mern">
-              MERN
-            </li>
-            <li data-filter=".filter-go">
-              Go
-            </li>
-            <li data-filter=".filter-java">
-              Java
-            </li>
-            <li data-filter=".filter-kotlin">
-              Kotlin
-            </li>
-          </ul>
-
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
+            <!-- Aurora Commerce - Laravel Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-laravel">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
                     <i class="fab fa-laravel"></i>
+                    <span>Laravel</span>
                   </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">E-Commerce Platform</div>
-                      <h3 class="entry-title">Aurora Commerce</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-laravel"></i> Laravel</span>
-                        <span class="tech-badge"><i class="fab fa-php"></i> PHP</span>
-                        <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
-                        <span class="tech-badge"><i class="fab fa-stripe"></i> Stripe</span>
+                  <div class="project-category">E-Commerce</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Aurora Commerce</h3>
+                  <p class="project-description">Multi-vendor e-commerce platform dengan real-time inventory management, payment gateway integration, dan advanced analytics dashboard.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                    <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="tech-tag"><i class="fab fa-stripe"></i> Stripe</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-shopping-cart"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">10K+</span>
+                        <span class="metric-label">Orders/Month</span>
                       </div>
-                      <p class="project-desc">Platform e-commerce modern dengan multi-vendor capability, payment gateway integration, dan real-time inventory management.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-shopping-cart"></i> 10K+ orders/month</span>
-                        <span><i class="fas fa-dollar-sign"></i> Rp 500M+ GMV</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/aurora-commerce" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-dollar-sign"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">Rp 500M+</span>
+                        <span class="metric-label">GMV</span>
                       </div>
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/aurora-commerce" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-nextjs">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
+            <!-- Atlas SIAKAD - Next.js Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-nextjs">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
                     <i class="fab fa-react"></i>
+                    <span>Next.js</span>
                   </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Education Platform</div>
-                      <h3 class="entry-title">Atlas SIAKAD</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-react"></i> Next.js</span>
-                        <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
-                        <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
-                        <span class="tech-badge"><i class="fas fa-plug"></i> Prisma</span>
+                  <div class="project-category">Education</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Atlas SIAKAD</h3>
+                  <p class="project-description">Modern academic information system dengan student management, automated grade processing, real-time notifications, dan comprehensive reporting.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-react"></i> Next.js</span>
+                    <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span class="tech-tag"><i class="fas fa-plug"></i> Prisma</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-school"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">50+</span>
+                        <span class="metric-label">Schools</span>
                       </div>
-                      <p class="project-desc">Sistem informasi akademik modern dengan student management, grade processing, dan real-time notifications.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-school"></i> 50+ schools</span>
-                        <span><i class="fas fa-users"></i> 25K+ students</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/atlas-siakad" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-users"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">25K+</span>
+                        <span class="metric-label">Students</span>
                       </div>
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/atlas-siakad" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-mern">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
-                    <i class="fab fa-node-js"></i>
-                  </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Corporate Website</div>
-                      <h3 class="entry-title">Amani Corporate Site</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-react"></i> React.js</span>
-                        <span class="tech-badge"><i class="fab fa-node-js"></i> Express</span>
-                        <span class="tech-badge"><i class="fas fa-leaf"></i> MongoDB</span>
-                        <span class="tech-badge"><i class="fas fa-palette"></i> Material-UI</span>
-                      </div>
-                      <p class="project-desc">Company profile website dengan CMS integration, client testimonials, dan lead management system.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-chart-line"></i> 200+ leads/month</span>
-                        <span><i class="fas fa-percentage"></i> 15% conversion</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/amani-corporate" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-go">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
+            <!-- Serenity Pay API - Go Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-go">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
                     <i class="fab fa-golang"></i>
+                    <span>Go</span>
                   </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Payment Gateway API</div>
-                      <h3 class="entry-title">Serenity Pay API</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-golang"></i> Go</span>
-                        <span class="tech-badge"><i class="fas fa-server"></i> Fiber</span>
-                        <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
-                        <span class="tech-badge"><i class="fab fa-cc-visa"></i> Payment API</span>
+                  <div class="project-category">Fintech</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Serenity Pay API</h3>
+                  <p class="project-description">High-performance payment gateway API dengan multiple payment channels, real-time fraud detection, compliance management, dan microservices architecture.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-golang"></i> Go</span>
+                    <span class="tech-tag"><i class="fas fa-server"></i> Fiber</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span class="tech-tag"><i class="fab fa-cc-visa"></i> Payment API</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-exchange-alt"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">500K+</span>
+                        <span class="metric-label">TX/Month</span>
                       </div>
-                      <p class="project-desc">High-performance fintech API dengan multiple payment channels, fraud detection, dan compliance management.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-exchange-alt"></i> 500K+ tx/month</span>
-                        <span><i class="fas fa-clock"></i> 99.95% uptime</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/serenity-pay" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-clock"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">99.95%</span>
+                        <span class="metric-label">Uptime</span>
                       </div>
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/serenity-pay" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-java">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
+            <!-- Amani Corporate - MERN Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-mern">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
+                    <i class="fab fa-node-js"></i>
+                    <span>MERN</span>
+                  </div>
+                  <div class="project-category">Corporate</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Amani Corporate Site</h3>
+                  <p class="project-description">Professional company profile website dengan integrated CMS, dynamic content management, client testimonials, dan lead generation system.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-react"></i> React.js</span>
+                    <span class="tech-tag"><i class="fab fa-node-js"></i> Express</span>
+                    <span class="tech-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                    <span class="tech-tag"><i class="fas fa-palette"></i> Material-UI</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-chart-line"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">200+</span>
+                        <span class="metric-label">Leads/Month</span>
+                      </div>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-percentage"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">15%</span>
+                        <span class="metric-label">Conversion</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/amani-corporate" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Argon HR Suite - Java Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-java">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
                     <i class="fab fa-java"></i>
+                    <span>Java</span>
                   </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">HR Management System</div>
-                      <h3 class="entry-title">Argon HR Suite</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-java"></i> Spring Boot</span>
-                        <span class="tech-badge"><i class="fas fa-shield-alt"></i> Spring Security</span>
-                        <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
-                        <span class="tech-badge"><i class="fas fa-file-pdf"></i> Jasper Reports</span>
+                  <div class="project-category">Enterprise</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Argon HR Suite</h3>
+                  <p class="project-description">Comprehensive HR management system dengan employee lifecycle management, automated payroll processing, performance evaluation, dan advanced reporting.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-java"></i> Spring Boot</span>
+                    <span class="tech-tag"><i class="fas fa-shield-alt"></i> Spring Security</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="tech-tag"><i class="fas fa-file-pdf"></i> Jasper Reports</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-users"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">5K+</span>
+                        <span class="metric-label">Employees</span>
                       </div>
-                      <p class="project-desc">Enterprise HR management system dengan employee lifecycle, payroll processing, dan performance evaluation.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-users"></i> 5,000+ employees</span>
-                        <span><i class="fas fa-tasks"></i> 70% efficiency gain</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/argon-hr-suite" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-tasks"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">70%</span>
+                        <span class="metric-label">Efficiency Gain</span>
                       </div>
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/argon-hr-suite" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-kotlin">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
+            <!-- Orion Attendance - Kotlin Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-kotlin">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
                     <i class="fab fa-android"></i>
+                    <span>Kotlin</span>
                   </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Mobile Attendance App</div>
-                      <h3 class="entry-title">Orion Attendance</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-android"></i> Kotlin</span>
-                        <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Android SDK</span>
-                        <span class="tech-badge"><i class="fas fa-database"></i> Room</span>
-                        <span class="tech-badge"><i class="fas fa-map-marker-alt"></i> GPS</span>
-                      </div>
-                      <p class="project-desc">Mobile attendance system dengan GPS geofencing, face recognition, dan real-time synchronization.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-user-check"></i> 2,000+ daily users</span>
-                        <span><i class="fas fa-check-circle"></i> 99.5% accuracy</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/orion-attendance" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                  <div class="project-category">Mobile</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Orion Attendance</h3>
+                  <p class="project-description">Native Android attendance application dengan GPS geofencing, facial recognition, offline capability, dan real-time data synchronization.</p>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
-                    <i class="fas fa-book"></i>
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-android"></i> Kotlin</span>
+                    <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Android SDK</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> Room</span>
+                    <span class="tech-tag"><i class="fas fa-map-marker-alt"></i> GPS</span>
                   </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Library Management</div>
-                      <h3 class="entry-title">Libraria OPAC+</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-laravel"></i> Laravel</span>
-                        <span class="tech-badge"><i class="fas fa-database"></i> MySQL</span>
-                        <span class="tech-badge"><i class="fas fa-search"></i> Elasticsearch</span>
-                        <span class="tech-badge"><i class="fas fa-book-reader"></i> MARC21</span>
-                      </div>
-                      <p class="project-desc">Online Public Access Catalog dengan advanced search, MARC21 compliance, dan multi-branch support.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-book-open"></i> 100K+ records</span>
-                        <span><i class="fas fa-star"></i> 4.6/5 rating</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/libraria-opac" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-laravel">
-              <article class="portfolio-entry">
-                <figure class="entry-icon">
-                  <div class="project-icon">
-                    <i class="fas fa-hand-holding-heart"></i>
-                  </div>
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-meta">Donation Platform</div>
-                      <h3 class="entry-title">ZakatCare Donations</h3>
-                      <div class="tech-stack">
-                        <span class="tech-badge"><i class="fab fa-laravel"></i> Laravel</span>
-                        <span class="tech-badge"><i class="fab fa-stripe"></i> Midtrans</span>
-                        <span class="tech-badge"><i class="fas fa-calculator"></i> Zakat Calculator</span>
-                        <span class="tech-badge"><i class="fab fa-whatsapp"></i> WhatsApp API</span>
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-user-check"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">2K+</span>
+                        <span class="metric-label">Daily Users</span>
                       </div>
-                      <p class="project-desc">Platform donasi zakat online dengan syariah compliance, payment gateway, dan impact reporting.</p>
-                      <div class="project-stats">
-                        <span><i class="fas fa-donate"></i> RM 2M+ collected</span>
-                        <span><i class="fas fa-users"></i> 5,000+ donors</span>
-                      </div>
-                      <div class="entry-links">
-                        <a href="https://github.com/taufiqriza/zakatcare" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-arrow-right"></i>
-                        </a>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-check-circle"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">99.5%</span>
+                        <span class="metric-label">Accuracy</span>
                       </div>
                     </div>
                   </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/orion-attendance" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Libraria OPAC+ - Laravel Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-laravel">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
+                    <i class="fab fa-laravel"></i>
+                    <span>Laravel</span>
+                  </div>
+                  <div class="project-category">Library</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Libraria OPAC+</h3>
+                  <p class="project-description">Advanced Online Public Access Catalog dengan full-text search, MARC21 compliance, multi-branch support, dan digital resource management.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                    <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                    <span class="tech-tag"><i class="fas fa-search"></i> Elasticsearch</span>
+                    <span class="tech-tag"><i class="fas fa-book-reader"></i> MARC21</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-book-open"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">100K+</span>
+                        <span class="metric-label">Records</span>
+                      </div>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-star"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">4.6</span>
+                        <span class="metric-label">Rating</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/libraria-opac" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ZakatCare - Laravel Project -->
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-laravel">
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-tech">
+                    <i class="fab fa-laravel"></i>
+                    <span>Laravel</span>
+                  </div>
+                  <div class="project-category">Non-Profit</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">ZakatCare Donations</h3>
+                  <p class="project-description">Syariah-compliant donation platform dengan zakat calculation tools, impact tracking, multi-payment channels, dan WhatsApp integration.</p>
+
+                  <div class="project-tech-stack">
+                    <span class="tech-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                    <span class="tech-tag"><i class="fab fa-stripe"></i> Midtrans</span>
+                    <span class="tech-tag"><i class="fas fa-calculator"></i> Zakat Calculator</span>
+                    <span class="tech-tag"><i class="fab fa-whatsapp"></i> WhatsApp API</span>
+                  </div>
+
+                  <div class="project-metrics">
+                    <div class="metric">
+                      <i class="fas fa-donate"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">RM 2M+</span>
+                        <span class="metric-label">Collected</span>
+                      </div>
+                    </div>
+                    <div class="metric">
+                      <i class="fas fa-users"></i>
+                      <div class="metric-info">
+                        <span class="metric-value">5K+</span>
+                        <span class="metric-label">Donors</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <a href="https://github.com/taufiqriza/zakatcare" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Project</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
           </div><!-- End Portfolio Container -->
-
         </div>
 
       </div>
