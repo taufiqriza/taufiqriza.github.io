@@ -1,0 +1,32 @@
+{
+    "name": "Muhamad Taufiq Riza - Portfolio",
+    "short_name": "Taufiq Riza",
+    "description": "Software Engineer dengan 5+ tahun pengalaman di Laravel, Next.js, MERN, Go, Java. Spesialis dalam web development, system integration, dan UI/UX design.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0a1628",
+    "theme_color": "#065cc2",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./assets/img/favicon.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/img/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "portfolio",
+        "developer",
+        "software engineering"
+    ],
+    "lang": "id",
+    "dir": "ltr",
+    "scope": "./",
+    "prefer_related_applications": false
+}
